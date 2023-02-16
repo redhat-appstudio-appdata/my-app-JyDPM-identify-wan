@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-oylk
+  namespace: spadgett-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:fe46ec7ef3b896faa9273aa6399df368f5fa5ccbf294faf6558eeabb5093df78
+        name: my-nodejs
+        resources: {}
+status: {}
